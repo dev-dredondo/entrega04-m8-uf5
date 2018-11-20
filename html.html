@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>    
+        <title>ENTREGA FORM</title>
+		<!-- Metatags -->
+        <meta charset="UTF-8">
+        <meta name="title" content="Pràctica HTML FORM">
+        <meta name="description" content="Entrega FORM">
+        <meta name="keywords" content="Granollers, SMX">
+        <meta name="author" content="Daniel Redondo Camacho">
+        <meta name="copyright" content="Educem">
+        <link rel="icon" type="image/png" href="./img/favicon.png" />
+  </head>
+		<!-- Body -->
+  <body>
+  		<!-- Titol Principal -->
+	<h1 align="center">Registre d'Alumnes SMX2</h1>
+  		<!-- Formulari -->
+	<form action="mailto:dgonzalez@educem.com?subject=entrega4-m8-uf5" enctype="text/plain" method="POST">
+		<!-- Taula -->
+		<table align="center" cellspacing="9">
+			<!-- Nom -->
+			<tr>
+				<th align="left"><label for="id_nom">Nom:</label></th>
+				<td>
+					<input id="id_nom" type="text" name="nom" size="60" maxlength="20" placeholder="Escriu el teu nom" required autofocus>
+				</td>
+			</tr>
+			<!-- Cognoms -->
+			<tr>
+				<th align="left"><label for="id_cognoms">Cognoms:</label></th>
+				<td>
+					<input id="id_cognoms" type="text" name="cognoms" size="60" maxlength="80" placeholder="Escriu el teus cognoms" required>
+				</td>
+			</tr>
+			<!-- E-mail -->
+			<tr>
+				<th align="left"><label for="id_email">E-mail:</label></th>
+				<td>
+					<input id="id_email" type="email" name="email" size="30" maxlength="30" placeholder="Escriu el teu email" required>
+				</td>
+			</tr>
+			<!-- Data naixement -->
+			<tr>
+				<th align="left"><label for="id_data">Data de Naixement:</label></th>
+				<td>
+					<input id="id_data" type="date" name="data" value="1999-01-01">
+				</td>
+			</tr>
+			<!-- Color -->
+			<tr>
+				<th align="left"><label for="id_color">Color Preferit:</label></th>
+				<td>
+					<input id="id_color" type="color" name="color" value="#ff0000">
+				</td>
+			</tr>
+			<!-- Moduls Preferits -->
+			<tr>
+				<th rowspan="7" align="left">Mòduls Preferits de SMX2:</th>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" id="id_m4" name="M4">
+					<label for="id_m4">M4 - Sistemes Operatius en Xarxa</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" id="id_m6" name="M6">
+					<label for="id_m6">M6 - Seguretat Informàtica</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" id="id_m7" name="M7">
+					<label for="id_m7">M7 - Serveis en Xarxa</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" id="id_m8" name="M8" checked>
+					<label for="id_m8">M8 - Aplicacions Web</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" id="id_m10" name="M10">
+					<label for="id_m10">M10 - Empresa i Iniciativa Emprenedora</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" id="id_m11" name="M11">
+					<label for="id_m11">M11 - Anglés Técnic</label>
+				</td>
+			</tr>
+			<!-- Enquesta futur -->
+			<tr>
+				<th rowspan="6" align="left">Què voldries fer després d'acabar SMX ?</th>
+			</tr>
+			<tr>
+				<td>
+					<input type="radio" id="id_dam" name="DAM">
+					<label for="id_dam">DAM</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="radio" id="id_asix" name="ASIX" checked>
+					<label for="id_asix">ASIX</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="radio" id="id_enginyeria" name="Enginyeria Informàtica">
+					<label for="id_enginyeria">Enginyeria Informàtica</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="radio" id="id_treballar" name="Treballar">
+					<label for="id_treballar">Treballar</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="radio" id="id_res" name="Res">
+					<label for="id_res">Res</label>
+				</td>
+			</tr>
+			<!-- Opinió HTML -->
+			<tr>
+				<th align="left">Què t'esta semblant el llenguatge HTML ?</th>
+				<td>
+					<select name="Opinió HTML">
+						<option value="M'ha agradat molt">M'ha agradat molt</option>
+						<option value="M'ha agradat" selected>M'ha agradat</option>
+						<option value="Ni fu ni fa">Ni fu ni fa</option>
+						<option value="No m'ha agradat gaire">No m'ha agradat gaire</option>
+						<option value="No m'ha agradat gens">No m'ha agradat gens</option>
+					</select>
+				</td>
+			</tr>
+			<!-- Nota -->
+			<tr>
+				<th align="left"><label for="id_nota">Nota que esperes d'aquesta entrega</label></th>
+				<td>
+					<input id="id_nota" type="number" min="0" max="10" name="nota" value="5">
+				</td>
+			</tr>
+			<!-- Password Encriptat -->
+			<tr>
+				<th align="left"><label for="id_password">Escriu un password per xifrar l'entrega:</label></th>
+				<td>
+					<input placeholder="Escriu un password" id="id_password" type="password" size="10" name="password" maxlength="10">
+				</td>
+			</tr>
+			<!-- Botons -->
+			<tr>
+				<td align="center" colspan="2">
+					<input id="id_enviar" name="enviar" type="submit" value="Enviar Respostes!">
+					<input id="id_reset" name="reset" type="reset" value="Netejar Formulari!">
+				</td>
+			</tr>
+		</table>	
+	</form>
+</html>
